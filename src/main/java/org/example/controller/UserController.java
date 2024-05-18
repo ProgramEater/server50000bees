@@ -1,10 +1,9 @@
 package org.example.controller;
 
-import lombok.RequiredArgsConstructor;
 import org.example.controller.dto.UserProfileDto;
 import org.example.controller.dto.UserRegisterDto;
 import org.example.domain.Authority;
-import org.example.domain.User;
+
 import org.example.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

@@ -4,7 +4,6 @@ import org.example.controller.dto.UserProfileDto;
 import org.example.controller.dto.UserRegisterDto;
 
 import org.example.domain.Authority;
-import org.example.domain.User;
 
 import java.util.List;
 

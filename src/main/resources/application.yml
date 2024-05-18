@@ -1,0 +1,29 @@
+# Конфигурационный файл TODO replace H2 with a normal database that is not in RAM and doesn't die with the server
+spring:
+
+  # Подключение к H2 бд через jdbc
+  datasource:
+    url: jdbc:h2:mem:testdb
+
+  # Включение консоли
+  h2:
+    console:
+      #enabled: false
+      enabled: true
+
+  jpa:
+
+    #Автогенерация схемы hibernate
+    #generate-ddl: false
+    generate-ddl: true
+
+    hibernate:
+      #ddl-auto: none
+      # update -> not deleting existing tables
+      ddl-auto: update
+
+    # Показываем запросы
+    show-sql: true
+
+    # Своевременный запуск data.sql
+    defer-datasource-initialization: true
